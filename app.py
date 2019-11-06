@@ -15,6 +15,7 @@ def songs():
         number = data['number']
         mood = data['mood']
         d=(r(number, mood))
+        # print(d)
         res={'res':r(number, mood)}
         return jsonify(res)
 

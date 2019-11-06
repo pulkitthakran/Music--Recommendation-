@@ -1,4 +1,5 @@
 def r(n,mood):
+    # print(mood)
     n=int(n)
     num=0
     from random import randint
@@ -21,9 +22,9 @@ def r(n,mood):
                     else:
                         break
             #print(song_list)
-            for l in song_list:
-                num=num+1
-                print(num,":",l)
+            # for l in song_list:
+            #     num=num+1
+            #     print(num,":",l)
         elif(mood=='sad'):
             f_sad=open("Sad.txt",'r+')
             while i<n:
@@ -39,9 +40,9 @@ def r(n,mood):
                     else:
                         break
             #print(song_list)
-            for l in song_list:
-                num=num+1
-                print(num,":",l)
+            # for l in song_list:
+            #     num=num+1
+            #     print(num,":",l)
         elif(mood=='romantic'):
             f_romantic=open("Romantic.txt",'r+')
             while i<n:
@@ -57,9 +58,9 @@ def r(n,mood):
                     else:
                         break
             #print(song_list)
-            for l in song_list:
-                num=num+1
-                print(num,":",l)
+            # for l in song_list:
+            #     num=num+1
+            #     print(num,":",l)
         elif(mood=='indie'):
             f_Indie=open("Indie.txt",'r+')
             while i<n:
@@ -74,8 +75,7 @@ def r(n,mood):
                         pass
                     else:
                         break
-            #print(song_list)
-            return song_list
+        return song_list
 
     else:
         return 'false'                
